@@ -11,7 +11,21 @@ As its base framework for distributed graph management and analysis, <a href="ht
 A Python version of CombBLAS is also available and it is called <a href="kdt.sourceforge.net/">KDT (Knowledge Discovery Toolbox)</a>. This is a Python wrapper that allows data scientists to easily use the features of CombBLAS. The parallel SCAN algorithm was also implemented in Python over KDT.
 
 <H4>Source Tree</H4>
-
+<ul>
+  <li><b>OriginalSCAN</b>: a custom implementation of the original SCAN algorithm in Python</li>
+  <li><b>SinglePass</b>: single-pass parallel SCAN algorithm
+    <ul>
+      <li><b>SCAN-CombBLAS</b>: C++ implementation over CombBLAS</li>
+      <li><b>SCAN-KDT</b>: Python implementation over KDT</li>
+    </ul>
+  </li>
+  <li><b>TwoPass</b>: two-pass parallel SCAN algorithm
+    <ul>
+      <li><b>SCAN-CombBLAS</b>: C++ implementation over CombBLAS</li>
+      <li><b>SCAN-KDT</b>: Python implementation over KDT</li>
+    </ul>
+  </li>
+</ul>
 <H4>Requirements</H4>
 <ul>
   <li>MPI (Open MPI, Intel MPI, MPICH)</li>
