@@ -1,0 +1,6 @@
+18:05:27 **** Incremental Build of configuration Release for project SecondStep ****
+make all 
+make: Nothing to be done for 'all'.
+
+18:05:28 Build Finished. 0 errors, 0 warnings. (took 271ms)
+

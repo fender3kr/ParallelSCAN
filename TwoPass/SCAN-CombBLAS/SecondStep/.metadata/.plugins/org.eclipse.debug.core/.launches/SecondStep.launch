@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ptp.launch.parallelLaunch">
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.25355" value="RUNNING"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.25571" value="RUNNING"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.25647" value="RUNNING"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.27131" value="RUNNING"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.27170" value="RUNNING"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.bindir" value=""/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.control.address" value="Phantom-G7"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.control.queue.name" value=""/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.control.user.name" value="phantom"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.control.working.dir" value="/home/phantom"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.current_controller" value="Basic.Options"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.directory" value="/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/SecondStep/SecondStep/Release"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.enabled_Advanced.Options" value="useDefaultAguments useDefaultPath"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.enabled_Basic.Options" value="mpiNumberOfProcesses prefixOption useHostFile useHostList"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.executableDirectory" value="/home/phantom/Desktop/SCAN/TwoStep/SCAN-CombBLAS/SecondStep/SecondStep/Release"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.executablePath" value="/home/phantom/Desktop/SCAN/TwoStep/SCAN-CombBLAS/SecondStep/SecondStep/Release/SecondStep"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.host_file" value=""/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.host_list" value=""/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.invalid_Advanced.Options" value="bindir script_path"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.invalid_Basic.Options" value="host_file host_list prefix script_path"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.launchMode" value="run"/>
+    <intAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.mpiNumberOfProcesses" value="1"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.mpich2_version" value="no_version"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.prefix" value=""/>
+    <booleanAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.prefixOption" value="false"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.progArgs" value="/home/phantom/Desktop/SCAN/Data/Com-Amazon.bin /home/phantom/Desktop/SCAN/Output/Com-Amazon.txt 2 0.7"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.ptpDirectory" value="/home/phantom/.eclipsesettings"/>
+    <booleanAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.useDefaultAguments" value="true"/>
+    <booleanAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.useDefaultPath" value="true"/>
+    <booleanAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.useHostFile" value="false"/>
+    <booleanAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.useHostList" value="false"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.valid_Advanced.Options" value="bindir control.address control.queue.name control.user.name control.working.dir current_controller enabled_Advanced.Options host_file host_list invalid_Advanced.Options mpiNumberOfProcesses mpich2_version prefix prefixOption ptpDirectory useDefaultAguments useDefaultPath useHostFile useHostList valid_Advanced.Options visible_Advanced.Options working.directory"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.valid_Basic.Options" value="bindir control.address control.queue.name control.user.name control.working.dir current_controller enabled_Basic.Options invalid_Basic.Options mpiNumberOfProcesses mpich2_version prefixOption ptpDirectory useDefaultAguments useDefaultPath useHostFile useHostList valid_Basic.Options visible_Basic.Options working.directory"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.visible_Advanced.Options" value="bindir useDefaultAguments useDefaultPath"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.visible_Basic.Options" value="host_file host_list mpiNumberOfProcesses prefix prefixOption useHostFile useHostList"/>
+    <stringAttribute key="f6b87212-5b7f-30ff-ab89-65a8ac2413e9.working.directory" value="/home/phantom"/>
+    <booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+    <stringAttribute key="org.eclipse.ptp.launch.ARGUMENT_ATTR" value="/home/phantom/Desktop/SCAN/Data/Com-Amazon.bin /home/phantom/Desktop/SCAN/Output/Com-Amazon.txt 2 0.7"/>
+    <booleanAttribute key="org.eclipse.ptp.launch.ATTR_AUTO_RUN_COMMAND" value="false"/>
+    <booleanAttribute key="org.eclipse.ptp.launch.ATTR_CONSOLE" value="true"/>
+    <booleanAttribute key="org.eclipse.ptp.launch.ATTR_COPY_EXECUTABLE_FROM_LOCAL" value="false"/>
+    <stringAttribute key="org.eclipse.ptp.launch.ATTR_REMOTE_EXECUTABLE_PATH" value="/home/phantom/Desktop/SCAN/TwoStep/SCAN-CombBLAS/SecondStep/SecondStep/Release/SecondStep"/>
+    <booleanAttribute key="org.eclipse.ptp.launch.ATTR_SYNC_AFTER" value="false"/>
+    <booleanAttribute key="org.eclipse.ptp.launch.ATTR_SYNC_BEFORE" value="false"/>
+    <listAttribute key="org.eclipse.ptp.launch.ATTR_SYNC_RULES"/>
+    <stringAttribute key="org.eclipse.ptp.launch.CONFIGURATION_NAME" value="Generic MPICH2 Interactive"/>
+    <stringAttribute key="org.eclipse.ptp.launch.PROJECT_ATTR" value="SecondStep"/>
+    <stringAttribute key="org.eclipse.ptp.launch.RESOURCE_MANAGER_NAME" value="f6b87212-5b7f-30ff-ab89-65a8ac2413e9"/>
+    <stringAttribute key="perf_executable_directory_tag_for_JAXB_exec_dir_value" value="org.eclipse.remote.LocalServices.executableDirectory"/>
+    <stringAttribute key="perf_executable_name" value="/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/SecondStep/SecondStep/Release/SecondStep/defaultValue"/>
+    <stringAttribute key="perf_executable_name_tag_for_name_value" value="org.eclipse.ptp.launch.APPLICATION_NAME"/>
+    <stringAttribute key="perf_executable_path_tag_for_JAXB_path_value" value="org.eclipse.remote.LocalServices.executablePath"/>
+    <stringAttribute key="perf_executable_path_tag_for_path_value" value="org.eclipse.ptp.launch.ATTR_REMOTE_EXECUTABLE_PATH"/>
+    <stringAttribute key="perf_framework_attribute_for_JAXB_arguments_value" value="org.eclipse.remote.LocalServices.progArgs"/>
+    <stringAttribute key="perf_framework_attribute_for_arguments_value" value="org.eclipse.ptp.launch.ARGUMENT_ATTR"/>
+    <stringAttribute key="perf_project_name" value="SecondStep"/>
+    <stringAttribute key="perf_project_name_tag_for_name_value" value="org.eclipse.ptp.launch.PROJECT_ATTR"/>
+</launchConfiguration>

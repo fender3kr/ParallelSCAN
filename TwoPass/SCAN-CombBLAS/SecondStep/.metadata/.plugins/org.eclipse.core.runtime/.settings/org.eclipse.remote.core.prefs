@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+remoteLaunchConfig/=org.eclipse.remote.LocalServices\:Local
+remoteLaunchConfig/New_configuratio=org.eclipse.remote.LocalServices\:Local
+remoteLaunchConfig/New_configuration=org.eclipse.remote.LocalServices\:Local
+remoteLaunchConfig/Se=org.eclipse.remote.LocalServices\:Local
+remoteLaunchConfig/SecondStep=org.eclipse.remote.LocalServices\:Local
+remoteLaunchConfig/Seo=org.eclipse.remote.LocalServices\:Local
+remoteLaunchType/org.eclipse.ptp.launch.parallelLaunch=org.eclipse.remote.LocalServices\:Local

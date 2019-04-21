@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+remoteLaunchConfig/FirstStep=org.eclipse.remote.LocalServices\:Local
+remoteLaunchType/org.eclipse.ptp.launch.parallelLaunch=org.eclipse.remote.LocalServices\:Local

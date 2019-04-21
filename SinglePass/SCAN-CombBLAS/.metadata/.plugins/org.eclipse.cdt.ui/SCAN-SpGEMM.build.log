@@ -1,0 +1,6 @@
+18:01:11 **** Incremental Build of configuration Release for project SCAN-SpGEMM ****
+make all 
+make: Nothing to be done for 'all'.
+
+18:01:11 Build Finished. 0 errors, 0 warnings. (took 259ms)
+

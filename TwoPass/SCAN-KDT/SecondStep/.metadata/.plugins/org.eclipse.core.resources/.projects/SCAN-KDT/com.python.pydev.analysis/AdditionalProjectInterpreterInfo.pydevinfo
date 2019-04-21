@@ -1,0 +1,28 @@
+-- VERSION_5
+-- START DISKCACHE_2
+/home/phantom/Desktop/SCAN/TwoStep/SCAN-KDT/SecondStep/.metadata/.plugins/org.eclipse.core.resources/.projects/SCAN-KDT/com.python.pydev.analysis/v2_indexcache
+Test|1534179829426738000|/home/phantom/Desktop/SCAN/TwoStep/SCAN-KDT/SecondStep/SCAN-KDT/Test.py
+community.SCAN|1534180060646768000|/home/phantom/Desktop/SCAN/TwoStep/SCAN-KDT/SecondStep/SCAN-KDT/community/SCAN.py
+community.__init__|1533678512036291000|/home/phantom/Desktop/SCAN/TwoStep/SCAN-KDT/SecondStep/SCAN-KDT/community/__init__.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+3=/home/phantom/Desktop/SCAN/TwoStep/SCAN-KDT/SecondStep/SCAN-KDT/community/SCAN.py
+2=Test
+4=community.SCAN
+5=SCAN
+1=/home/phantom/Desktop/SCAN/TwoStep/SCAN-KDT/SecondStep/SCAN-KDT/Test.py
+-- END DICTIONARY
+-- START TREE 1
+5
+eps|1|epsilon!1^20#5*19@
+inp|1|input_path!1^18#5*19@
+mu|1|mu!1^19#5*19@
+sca|2|SCAN!3^11#7*33@scan!1^21#5*19@
+sta|1|start!1^17#5*19@
+-- END TREE
+-- START TREE 2
+2
+__i|1|__init__!5&3^12#9*34@
+det|1|detect!5&3^15#9*34@
+-- END TREE

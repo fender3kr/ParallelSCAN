@@ -1,0 +1,370 @@
+09:35:41 **** Build of configuration Debug for project FirstStep ****
+make all 
+Building file: ../src/util/Parameter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/util/Parameter.d" -MT"src/util/Parameter.o" -o "src/util/Parameter.o" "../src/util/Parameter.cpp"
+Finished building: ../src/util/Parameter.cpp
+ 
+Building file: ../src/roar/roaring.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/roar/roaring.d" -MT"src/roar/roaring.o" -o "src/roar/roaring.o" "../src/roar/roaring.c"
+Finished building: ../src/roar/roaring.c
+ 
+Building file: ../src/mtx/BinaryFormatter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/mtx/BinaryFormatter.d" -MT"src/mtx/BinaryFormatter.o" -o "src/mtx/BinaryFormatter.o" "../src/mtx/BinaryFormatter.cpp"
+Finished building: ../src/mtx/BinaryFormatter.cpp
+ 
+Building file: ../src/mtx/MTXFormatter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/mtx/MTXFormatter.d" -MT"src/mtx/MTXFormatter.o" -o "src/mtx/MTXFormatter.o" "../src/mtx/MTXFormatter.cpp"
+Finished building: ../src/mtx/MTXFormatter.cpp
+ 
+Building file: ../src/mpi/MPIHelper.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/mpi/MPIHelper.d" -MT"src/mpi/MPIHelper.o" -o "src/mpi/MPIHelper.o" "../src/mpi/MPIHelper.cpp"
+Finished building: ../src/mpi/MPIHelper.cpp
+ 
+Building file: ../src/io/GraphIOException.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/io/GraphIOException.d" -MT"src/io/GraphIOException.o" -o "src/io/GraphIOException.o" "../src/io/GraphIOException.cpp"
+Finished building: ../src/io/GraphIOException.cpp
+ 
+Building file: ../src/io/GraphReader.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/io/GraphReader.d" -MT"src/io/GraphReader.o" -o "src/io/GraphReader.o" "../src/io/GraphReader.cpp"
+Finished building: ../src/io/GraphReader.cpp
+ 
+Building file: ../src/io/MTXGraphWriter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/io/MTXGraphWriter.d" -MT"src/io/MTXGraphWriter.o" -o "src/io/MTXGraphWriter.o" "../src/io/MTXGraphWriter.cpp"
+../src/io/MTXGraphWriter.cpp: In destructor ‘virtual phantom::MTXGraphWriter::~MTXGraphWriter()’:
+../src/io/MTXGraphWriter.cpp:17:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  if(stream.is_open())
+  ^~
+../src/io/MTXGraphWriter.cpp:19:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+   stream.close();
+   ^~~~~~
+Finished building: ../src/io/MTXGraphWriter.cpp
+ 
+Building file: ../src/graph/GraphProcessor.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/graph/GraphProcessor.d" -MT"src/graph/GraphProcessor.o" -o "src/graph/GraphProcessor.o" "../src/graph/GraphProcessor.cpp"
+Finished building: ../src/graph/GraphProcessor.cpp
+ 
+Building file: ../src/SCAN-MPI.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -g3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/SCAN-MPI.d" -MT"src/SCAN-MPI.o" -o "src/SCAN-MPI.o" "../src/SCAN-MPI.cpp"
+Finished building: ../src/SCAN-MPI.cpp
+ 
+Building target: FirstStep
+Invoking: GCC C++ Linker
+g++  -o "FirstStep"  ./src/util/Parameter.o  ./src/roar/roaring.o  ./src/mtx/BinaryFormatter.o ./src/mtx/MTXFormatter.o  ./src/mpi/MPIHelper.o  ./src/io/GraphIOException.o ./src/io/GraphReader.o ./src/io/MTXGraphWriter.o  ./src/graph/GraphProcessor.o  ./src/SCAN-MPI.o   -lgomp
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::storeAsciiGraph(phantom::Parameter*, unsigned int*, unsigned int*, unsigned int*) const':
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:47: undefined reference to `MPI::MODE_CREATE'
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:47: undefined reference to `MPI::MODE_WRONLY'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::storeAsciiGraph(phantom::Parameter*, unsigned int*, unsigned int*, unsigned int*) const':
+/usr/local/include/mpicxx.h:1947: undefined reference to `vtable for MPI::File'
+makefile:51: recipe for target 'FirstStep' failed
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::COMM_WORLD'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::INFO_NULL'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI_File_open'
+/usr/local/include/mpicxx.h:192: undefined reference to `MPI::BYTE'
+/usr/local/include/mpicxx.h:2252: undefined reference to `MPI::INFO_NULL'
+/usr/local/include/mpicxx.h:2252: undefined reference to `MPI_File_set_view'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::BYTE'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI_File_write'
+/usr/local/include/mpicxx.h:2264: undefined reference to `MPI_File_close'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::FILE_NULL'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2264: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2252: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::BYTE'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI_File_write'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::File::Call_errhandler(int) const'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::storeBinaryGraph(phantom::Parameter*, unsigned int*, unsigned int*, unsigned int*) const':
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:64: undefined reference to `MPI::MODE_CREATE'
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:64: undefined reference to `MPI::MODE_WRONLY'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::storeBinaryGraph(phantom::Parameter*, unsigned int*, unsigned int*, unsigned int*) const':
+/usr/local/include/mpicxx.h:1947: undefined reference to `vtable for MPI::File'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::COMM_WORLD'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::INFO_NULL'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI_File_open'
+/usr/local/include/mpicxx.h:192: undefined reference to `MPI::BYTE'
+/usr/local/include/mpicxx.h:2252: undefined reference to `MPI::INFO_NULL'
+/usr/local/include/mpicxx.h:2252: undefined reference to `MPI_File_set_view'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::BYTE'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI_File_write'
+/usr/local/include/mpicxx.h:2264: undefined reference to `MPI_File_close'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::FILE_NULL'
+/usr/local/include/mpicxx.h:2179: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2264: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2252: undefined reference to `MPI::File::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::BYTE'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI_File_write'
+/usr/local/include/mpicxx.h:2280: undefined reference to `MPI::File::Call_errhandler(int) const'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::MPIHelper(int&, char**&)':
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:14: undefined reference to `MPI::THREAD_MULTIPLE'
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:14: undefined reference to `MPI::Init_thread(int&, char**&, int)'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::MPIHelper(int&, char**&)':
+/usr/local/include/mpicxx.h:1296: undefined reference to `MPI::COMM_WORLD'
+/usr/local/include/mpicxx.h:1296: undefined reference to `MPI_Comm_size'
+/usr/local/include/mpicxx.h:1296: undefined reference to `MPI::COMM_WORLD'
+/usr/local/include/mpicxx.h:1296: undefined reference to `MPI::Comm::Call_errhandler(int) const'
+/usr/local/include/mpicxx.h:1196: undefined reference to `MPI::COMM_WORLD'
+/usr/local/include/mpicxx.h:1196: undefined reference to `MPI_Comm_rank'
+/usr/local/include/mpicxx.h:1196: undefined reference to `MPI::COMM_WORLD'
+/usr/local/include/mpicxx.h:1196: undefined reference to `MPI::Comm::Call_errhandler(int) const'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::reduceSharedNeighbors(unsigned int*, unsigned int*, int) const':
+/usr/local/include/mpicxx.h:1371: undefined reference to `MPI::COMM_WORLD'
+/usr/local/include/mpicxx.h:1371: undefined reference to `MPI::SUM'
+/usr/local/include/mpicxx.h:1371: undefined reference to `MPI::INT'
+/usr/local/include/mpicxx.h:1371: undefined reference to `MPI_Allreduce'
+/usr/local/include/mpicxx.h:1371: undefined reference to `MPI::COMM_WORLD'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::getWallTime() const':
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:41: undefined reference to `MPI::Wtime()'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::finalize() const':
+/home/phantom/Desktop/CommunityDetection/SCAN-TwoPhases/FirstStep/FirstStep/Debug/../src/mpi/MPIHelper.cpp:86: undefined reference to `MPI::Finalize()'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::reduceSharedNeighbors(unsigned int*, unsigned int*, int) const':
+/usr/local/include/mpicxx.h:1371: undefined reference to `MPI::Comm::Call_errhandler(int) const'
+collect2: error: ld returned 1 exit status
+make: *** [FirstStep] Error 1
+09:37:21 **** Incremental Build of configuration Debug for project FirstStep ****
+make all 
+Building target: FirstStep
+Invoking: GCC C++ Linker
+mpic++  -o "FirstStep"  ./src/util/Parameter.o  ./src/roar/roaring.o  ./src/mtx/BinaryFormatter.o ./src/mtx/MTXFormatter.o  ./src/mpi/MPIHelper.o  ./src/io/GraphIOException.o ./src/io/GraphReader.o ./src/io/MTXGraphWriter.o  ./src/graph/GraphProcessor.o  ./src/SCAN-MPI.o   -lgomp
+Finished building target: FirstStep
+ 
+09:37:33 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+Building file: ../src/util/Parameter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/util/Parameter.d" -MT"src/util/Parameter.o" -o "src/util/Parameter.o" "../src/util/Parameter.cpp"
+Finished building: ../src/util/Parameter.cpp
+ 
+Building file: ../src/roar/roaring.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/roar/roaring.d" -MT"src/roar/roaring.o" -o "src/roar/roaring.o" "../src/roar/roaring.c"
+Finished building: ../src/roar/roaring.c
+ 
+Building file: ../src/mtx/BinaryFormatter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mtx/BinaryFormatter.d" -MT"src/mtx/BinaryFormatter.o" -o "src/mtx/BinaryFormatter.o" "../src/mtx/BinaryFormatter.cpp"
+Finished building: ../src/mtx/BinaryFormatter.cpp
+ 
+Building file: ../src/mtx/MTXFormatter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mtx/MTXFormatter.d" -MT"src/mtx/MTXFormatter.o" -o "src/mtx/MTXFormatter.o" "../src/mtx/MTXFormatter.cpp"
+Finished building: ../src/mtx/MTXFormatter.cpp
+ 
+Building file: ../src/mpi/MPIHelper.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mpi/MPIHelper.d" -MT"src/mpi/MPIHelper.o" -o "src/mpi/MPIHelper.o" "../src/mpi/MPIHelper.cpp"
+Finished building: ../src/mpi/MPIHelper.cpp
+ 
+Building file: ../src/io/GraphIOException.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/io/GraphIOException.d" -MT"src/io/GraphIOException.o" -o "src/io/GraphIOException.o" "../src/io/GraphIOException.cpp"
+Finished building: ../src/io/GraphIOException.cpp
+ 
+Building file: ../src/io/GraphReader.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/io/GraphReader.d" -MT"src/io/GraphReader.o" -o "src/io/GraphReader.o" "../src/io/GraphReader.cpp"
+Finished building: ../src/io/GraphReader.cpp
+ 
+Building file: ../src/io/MTXGraphWriter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/io/MTXGraphWriter.d" -MT"src/io/MTXGraphWriter.o" -o "src/io/MTXGraphWriter.o" "../src/io/MTXGraphWriter.cpp"
+../src/io/MTXGraphWriter.cpp: In destructor ‘virtual phantom::MTXGraphWriter::~MTXGraphWriter()’:
+../src/io/MTXGraphWriter.cpp:17:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  if(stream.is_open())
+  ^~
+../src/io/MTXGraphWriter.cpp:19:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+   stream.close();
+   ^~~~~~
+Finished building: ../src/io/MTXGraphWriter.cpp
+ 
+Building file: ../src/graph/GraphProcessor.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/graph/GraphProcessor.d" -MT"src/graph/GraphProcessor.o" -o "src/graph/GraphProcessor.o" "../src/graph/GraphProcessor.cpp"
+../src/graph/GraphProcessor.cpp:58:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+  #pragma omp parallel for schedule(guided) num_threads(parameter -> getNumberOfThreads())
+ 
+Finished building: ../src/graph/GraphProcessor.cpp
+ 
+Building file: ../src/SCAN-MPI.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SCAN-MPI.d" -MT"src/SCAN-MPI.o" -o "src/SCAN-MPI.o" "../src/SCAN-MPI.cpp"
+Finished building: ../src/SCAN-MPI.cpp
+ 
+Building target: FirstStep
+Invoking: GCC C++ Linker
+g++  -o "FirstStep"  ./src/util/Parameter.o  ./src/roar/roaring.o  ./src/mtx/BinaryFormatter.o ./src/mtx/MTXFormatter.o  ./src/mpi/MPIHelper.o  ./src/io/GraphIOException.o ./src/io/GraphReader.o ./src/io/MTXGraphWriter.o  ./src/graph/GraphProcessor.o  ./src/SCAN-MPI.o   
+./src/util/Parameter.o: In function `phantom::Parameter::getParameter(int&, char**&)':
+Parameter.cpp:(.text+0x5af): undefined reference to `omp_get_max_threads'
+Parameter.cpp:(.text+0x6f9): undefined reference to `omp_get_max_threads'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::storeAsciiGraph(phantom::Parameter*, unsigned int*, unsigned int*, unsigned int*) const':
+MPIHelper.cpp:(.text+0x109): undefined reference to `MPI::MODE_CREATE'
+MPIHelper.cpp:(.text+0x10f): undefined reference to `MPI::MODE_WRONLY'
+MPIHelper.cpp:(.text+0x12d): undefined reference to `vtable for MPI::File'
+MPIHelper.cpp:(.text+0x141): undefined reference to `MPI::COMM_WORLD'
+MPIHelper.cpp:(.text+0x14c): undefined reference to `MPI::INFO_NULL'
+MPIHelper.cpp:(.text+0x15e): undefined reference to `MPI_File_open'
+MPIHelper.cpp:(.text+0x1b4): undefined reference to `MPI::BYTE'
+makefile:51: recipe for target 'FirstStep' failed
+MPIHelper.cpp:(.text+0x1bb): undefined reference to `MPI::INFO_NULL'
+MPIHelper.cpp:(.text+0x1ce): undefined reference to `MPI_File_set_view'
+MPIHelper.cpp:(.text+0x235): undefined reference to `MPI::BYTE'
+MPIHelper.cpp:(.text+0x24a): undefined reference to `MPI_File_write'
+MPIHelper.cpp:(.text+0x25b): undefined reference to `MPI_File_close'
+MPIHelper.cpp:(.text+0x2c3): undefined reference to `MPI::FILE_NULL'
+MPIHelper.cpp:(.text+0x2ca): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x2de): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x2f6): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x306): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x32b): undefined reference to `MPI::BYTE'
+MPIHelper.cpp:(.text+0x340): undefined reference to `MPI_File_write'
+MPIHelper.cpp:(.text+0x376): undefined reference to `MPI::File::Call_errhandler(int) const'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::storeBinaryGraph(phantom::Parameter*, unsigned int*, unsigned int*, unsigned int*) const':
+MPIHelper.cpp:(.text+0x45b): undefined reference to `MPI::MODE_CREATE'
+MPIHelper.cpp:(.text+0x461): undefined reference to `MPI::MODE_WRONLY'
+MPIHelper.cpp:(.text+0x47f): undefined reference to `vtable for MPI::File'
+MPIHelper.cpp:(.text+0x493): undefined reference to `MPI::COMM_WORLD'
+MPIHelper.cpp:(.text+0x49e): undefined reference to `MPI::INFO_NULL'
+MPIHelper.cpp:(.text+0x4b0): undefined reference to `MPI_File_open'
+MPIHelper.cpp:(.text+0x506): undefined reference to `MPI::BYTE'
+MPIHelper.cpp:(.text+0x50d): undefined reference to `MPI::INFO_NULL'
+MPIHelper.cpp:(.text+0x520): undefined reference to `MPI_File_set_view'
+MPIHelper.cpp:(.text+0x587): undefined reference to `MPI::BYTE'
+MPIHelper.cpp:(.text+0x59c): undefined reference to `MPI_File_write'
+MPIHelper.cpp:(.text+0x5ad): undefined reference to `MPI_File_close'
+MPIHelper.cpp:(.text+0x623): undefined reference to `MPI::FILE_NULL'
+MPIHelper.cpp:(.text+0x62a): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x63e): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x656): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x666): undefined reference to `MPI::File::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x68b): undefined reference to `MPI::BYTE'
+MPIHelper.cpp:(.text+0x6a0): undefined reference to `MPI_File_write'
+MPIHelper.cpp:(.text+0x6d6): undefined reference to `MPI::File::Call_errhandler(int) const'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::MPIHelper(int&, char**&)':
+MPIHelper.cpp:(.text+0x751): undefined reference to `MPI::THREAD_MULTIPLE'
+MPIHelper.cpp:(.text+0x775): undefined reference to `MPI::Init_thread(int&, char**&, int)'
+MPIHelper.cpp:(.text+0x77b): undefined reference to `MPI::COMM_WORLD'
+MPIHelper.cpp:(.text+0x783): undefined reference to `MPI_Comm_size'
+MPIHelper.cpp:(.text+0x78e): undefined reference to `MPI::COMM_WORLD'
+MPIHelper.cpp:(.text+0x795): undefined reference to `MPI::Comm::Call_errhandler(int) const'
+MPIHelper.cpp:(.text+0x79f): undefined reference to `MPI::COMM_WORLD'
+MPIHelper.cpp:(.text+0x7aa): undefined reference to `MPI_Comm_rank'
+MPIHelper.cpp:(.text+0x7b5): undefined reference to `MPI::COMM_WORLD'
+MPIHelper.cpp:(.text+0x7bc): undefined reference to `MPI::Comm::Call_errhandler(int) const'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::reduceSharedNeighbors(unsigned int*, unsigned int*, int) const':
+MPIHelper.cpp:(.text+0x810): undefined reference to `MPI::COMM_WORLD'
+MPIHelper.cpp:(.text+0x817): undefined reference to `MPI::SUM'
+MPIHelper.cpp:(.text+0x81d): undefined reference to `MPI::INT'
+MPIHelper.cpp:(.text+0x82e): undefined reference to `MPI_Allreduce'
+MPIHelper.cpp:(.text+0x843): undefined reference to `MPI::COMM_WORLD'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::getWallTime() const':
+MPIHelper.cpp:(.text+0x51): undefined reference to `MPI::Wtime()'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::finalize() const':
+MPIHelper.cpp:(.text+0x61): undefined reference to `MPI::Finalize()'
+./src/mpi/MPIHelper.o: In function `phantom::MPIHelper::reduceSharedNeighbors(unsigned int*, unsigned int*, int) const':
+MPIHelper.cpp:(.text+0x84e): undefined reference to `MPI::Comm::Call_errhandler(int) const'
+collect2: error: ld returned 1 exit status
+make: *** [FirstStep] Error 1
+09:38:06 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+Building target: FirstStep
+Invoking: GCC C++ Linker
+mpic++  -o "FirstStep"  ./src/util/Parameter.o  ./src/roar/roaring.o  ./src/mtx/BinaryFormatter.o ./src/mtx/MTXFormatter.o  ./src/mpi/MPIHelper.o  ./src/io/GraphIOException.o ./src/io/GraphReader.o ./src/io/MTXGraphWriter.o  ./src/graph/GraphProcessor.o  ./src/SCAN-MPI.o   
+./src/util/Parameter.o: In function `phantom::Parameter::getParameter(int&, char**&)':
+Parameter.cpp:(.text+0x5af): undefined reference to `omp_get_max_threads'
+Parameter.cpp:(.text+0x6f9): undefined reference to `omp_get_max_threads'
+makefile:51: recipe for target 'FirstStep' failed
+collect2: error: ld returned 1 exit status
+make: *** [FirstStep] Error 1
+09:38:36 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+Building file: ../src/util/Parameter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/util/Parameter.d" -MT"src/util/Parameter.o" -o "src/util/Parameter.o" "../src/util/Parameter.cpp"
+Finished building: ../src/util/Parameter.cpp
+ 
+Building file: ../src/mtx/BinaryFormatter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/mtx/BinaryFormatter.d" -MT"src/mtx/BinaryFormatter.o" -o "src/mtx/BinaryFormatter.o" "../src/mtx/BinaryFormatter.cpp"
+Finished building: ../src/mtx/BinaryFormatter.cpp
+ 
+Building file: ../src/mtx/MTXFormatter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/mtx/MTXFormatter.d" -MT"src/mtx/MTXFormatter.o" -o "src/mtx/MTXFormatter.o" "../src/mtx/MTXFormatter.cpp"
+Finished building: ../src/mtx/MTXFormatter.cpp
+ 
+Building file: ../src/mpi/MPIHelper.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/mpi/MPIHelper.d" -MT"src/mpi/MPIHelper.o" -o "src/mpi/MPIHelper.o" "../src/mpi/MPIHelper.cpp"
+Finished building: ../src/mpi/MPIHelper.cpp
+ 
+Building file: ../src/io/GraphIOException.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/io/GraphIOException.d" -MT"src/io/GraphIOException.o" -o "src/io/GraphIOException.o" "../src/io/GraphIOException.cpp"
+Finished building: ../src/io/GraphIOException.cpp
+ 
+Building file: ../src/io/GraphReader.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/io/GraphReader.d" -MT"src/io/GraphReader.o" -o "src/io/GraphReader.o" "../src/io/GraphReader.cpp"
+Finished building: ../src/io/GraphReader.cpp
+ 
+Building file: ../src/io/MTXGraphWriter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/io/MTXGraphWriter.d" -MT"src/io/MTXGraphWriter.o" -o "src/io/MTXGraphWriter.o" "../src/io/MTXGraphWriter.cpp"
+../src/io/MTXGraphWriter.cpp: In destructor ‘virtual phantom::MTXGraphWriter::~MTXGraphWriter()’:
+../src/io/MTXGraphWriter.cpp:17:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  if(stream.is_open())
+  ^~
+../src/io/MTXGraphWriter.cpp:19:3: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+   stream.close();
+   ^~~~~~
+Finished building: ../src/io/MTXGraphWriter.cpp
+ 
+Building file: ../src/graph/GraphProcessor.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/graph/GraphProcessor.d" -MT"src/graph/GraphProcessor.o" -o "src/graph/GraphProcessor.o" "../src/graph/GraphProcessor.cpp"
+Finished building: ../src/graph/GraphProcessor.cpp
+ 
+Building file: ../src/SCAN-MPI.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/SCAN-MPI.d" -MT"src/SCAN-MPI.o" -o "src/SCAN-MPI.o" "../src/SCAN-MPI.cpp"
+Finished building: ../src/SCAN-MPI.cpp
+ 
+Building target: FirstStep
+Invoking: GCC C++ Linker
+mpic++  -o "FirstStep"  ./src/util/Parameter.o  ./src/roar/roaring.o  ./src/mtx/BinaryFormatter.o ./src/mtx/MTXFormatter.o  ./src/mpi/MPIHelper.o  ./src/io/GraphIOException.o ./src/io/GraphReader.o ./src/io/MTXGraphWriter.o  ./src/graph/GraphProcessor.o  ./src/SCAN-MPI.o   -lgomp
+Finished building target: FirstStep
+ 
+09:39:46 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+make: Nothing to be done for 'all'.
+09:42:12 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+make: Nothing to be done for 'all'.
+10:35:10 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+Building file: ../src/util/Parameter.cpp
+Invoking: GCC C++ Compiler
+mpic++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -fopenmp -MMD -MP -MF"src/util/Parameter.d" -MT"src/util/Parameter.o" -o "src/util/Parameter.o" "../src/util/Parameter.cpp"
+Finished building: ../src/util/Parameter.cpp
+ 
+Building target: FirstStep
+Invoking: GCC C++ Linker
+mpic++  -o "FirstStep"  ./src/util/Parameter.o  ./src/roar/roaring.o  ./src/mtx/BinaryFormatter.o ./src/mtx/MTXFormatter.o  ./src/mpi/MPIHelper.o  ./src/io/GraphIOException.o ./src/io/GraphReader.o ./src/io/MTXGraphWriter.o  ./src/graph/GraphProcessor.o  ./src/SCAN-MPI.o   -lgomp
+Finished building target: FirstStep
+ 
+13:42:34 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+make: Nothing to be done for 'all'.
+15:55:40 **** Incremental Build of configuration Release for project FirstStep ****
+make all 
+make: Nothing to be done for 'all'.
